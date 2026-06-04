@@ -5,6 +5,7 @@ import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
 import GitHubTestUrl from './pages/GitHubTestUrl';
 import P2 from './pages/P2';
+import P3 from './pages/P3';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" element={<GitHubTestUrl />} />
 {/* 1. ADD THE ROUTE FOR P2 HERE (It will safely resolve to /test-github/p2) */}
         <Route path="/p2" element={<P2 />} />
+{/* 1. ADD THE ROUTE FOR P3 HERE (It will safely resolve to /test-github/p3) */}
+        <Route path="/p3" element={<P3/>} />
 {/* Fallback for any other pages */}   
         
         <Route path="*" element={<PageNotFound />} />
