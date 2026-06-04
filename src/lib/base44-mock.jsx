@@ -18,7 +18,7 @@ export const createClient = () => ({
   },
   // Bypasses hardcoded asset URLs by pointing them to your local public folder asset
   config: {
-    logoUrl: '/logo.png', // 👈 Change 'logo.png' to match the file name you uploaded in Step 1
+    logoUrl: 'public/SPFlyers-logo.png', // 👈 Change 'logo.png' to match the file name you uploaded in Step 1
     theme: 'dark'
   }
 });
