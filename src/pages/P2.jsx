@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom'; // 👈 ADD THIS IMPORT
 
 export default function P2() {
   return (
