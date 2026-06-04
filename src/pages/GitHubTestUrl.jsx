@@ -9,7 +9,12 @@ export default function GitHubTestUrl() {
         animate={{ opacity: [0.1, 0.3, 0.1] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
-
+<Link
+        to="/p2"
+        className="absolute top-6 right-6 font-mono text-sm text-muted-foreground border border-border px-4 py-2 hover:border-primary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+      >
+        P2 →
+      </Link>
       <h1 className="font-display text-foreground text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight tracking-tight select-none">
         GitHub Test URL
       </h1>
