@@ -15,6 +15,11 @@ export const createClient = () => ({
     me: async () => ({ id: 'mock-user', name: 'Test User' }),
     login: async () => ({}),
     logout: async () => ({}),
+  },
+  // Bypasses hardcoded asset URLs by pointing them to your local public folder asset
+  config: {
+    logoUrl: '/logo.png', // 👈 Change 'logo.png' to match the file name you uploaded in Step 1
+    theme: 'dark'
   }
 });
 
@@ -44,7 +49,6 @@ export const AuthProvider = ({ children }) => <>{children}</>;
 export const QueryClientProvider = ({ children }) => <>{children}</>;
 export const Base44Provider = ({ children }) => <>{children}</>;
 
-// Add any other specific function names your pages crash on below as empty functions:
 export const useMutation = () => [async () => {}, { isLoading: false }];
 
 const mockDefault = { createClient, useAuth, useQuery, AuthProvider, QueryClientProvider };
