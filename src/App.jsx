@@ -12,8 +12,13 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
+        
+{/* This will now correctly resolve to /test-github/ */}        
         <Route path="/" element={<GitHubTestUrl />} />
-        <Route path="/" element={<P2 />} />
+{/* 1. ADD THE ROUTE FOR P2 HERE (It will safely resolve to /test-github/p2) */}
+        <Route path="/p2" element={<P2 />} />
+{/* Fallback for any other pages */}   
+        
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Toaster />
