@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
 import GitHubTestUrl from './pages/GitHubTestUrl';
+import P2 from './pages/P2';
 
 function App() {
   return (
