@@ -13,6 +13,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<GitHubTestUrl />} />
+        <Route path="/" element={<P2 />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Toaster />
