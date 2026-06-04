@@ -16,6 +16,13 @@ export default function GitHubTestUrl() {
       >
         P2 →
       </Link>
+
+<Link
+        to="/p3"
+        className="absolute top-6 right-6 font-mono text-sm text-muted-foreground border border-border px-4 py-2 hover:border-primary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+      >
+        P3 →
+      </Link>
       <h1 className="font-display text-foreground text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight tracking-tight select-none">
         GitHub Test URL
       </h1>
