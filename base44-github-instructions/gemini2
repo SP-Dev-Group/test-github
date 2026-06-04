@@ -1,1 +1,17 @@
-df
+ADDING PAGES AT BASE 44 
+
+1. COPY page.jsx and ADD IT TO /pages
+2. ADD THIS to top section page.jsx      import { Link } from 'react-router-dom'; // 👈 ADD THIS IMPORT
+
+3. /src/App.jsx  ADD tHIS    import P2 from './pages/P2';
+4. /src/App.jsx ADD THIS to Route section    <Route path="/p2" element={<P2 />} />
+
+5. For the page nav from add the link to "see below"
+<Link
+        to="/p2"
+        className="absolute top-6 right-6 font-mono text-sm text-muted-foreground border border-border px-4 py-2 hover:border-primary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+      >
+        P2 →
+      </Link>
+      ------------------------------------------------------------------------
+      
