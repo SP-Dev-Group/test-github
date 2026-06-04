@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
-
 export default function GitHubTestUrl() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center relative overflow-hidden">
